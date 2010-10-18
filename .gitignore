@@ -13,3 +13,4 @@ _ReSharper.*
 */test-results/*
 */bin/Debug/*
 *.pidb
+*.userprefs
