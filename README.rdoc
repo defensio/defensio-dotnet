@@ -1,0 +1,14 @@
+== Defensio-DotNet
+
+=== Minimum Requirements
+* .NET Framework 2.0
+* Tested under the Microsoft .NET Framework and Mono 2.8
+
+=== What is Defensio-DotNet?
+
+Defensio-DotNet is a wrapper around Defensio's API version 2.0. It was written in C# and is unit tested with nUnit. 
+
+== Usage
+
+See the Defensio.Tests project for usage. Additionally, please consult the {API documentation}[http://defensio.com/api] for details on how to use the Defensio API and how interact with it.
+
