@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Defensio.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Defensio.Api.DefensioResult">
+            <summary>
+            Represents the result of a Defensio API call.
+            </summary>
+        </member>
+        <member name="F:Defensio.Api.DefensioResult.HttpStatusCodeKey">
+            <summary>
+            Key to the HTTP Status code stored.
+            </summary>
+        </member>
+        <member name="P:Defensio.Api.DefensioResult.HttpStatusCode">
+            <summary>
+            HTTP Status code of the call.
+            </summary>
+        </member>
+        <member name="P:Defensio.Api.DefensioResult.Item(System.String)">
+            <summary>
+            Access a specific result object.
+            </summary>
+            <param name="key">Key to the result object.</param>
+            <returns>A result object. Can be a <see cref="T:System.Collections.Hashtable"/>, an <see cref="T:System.Collections.ArrayList"/>, or a value.</returns>
+        </member>
+        <member name="T:Defensio.Api.Rest.RestResponse">
+            <summary>
+            Response from a rest request.
+            </summary>
+        </member>
+        <member name="P:Defensio.Api.Rest.RestResponse.HttpStatusCode">
+            <summary>
+            HTTP status code of the response.
+            </summary>
+        </member>
+        <member name="P:Defensio.Api.Rest.RestResponse.Content">
+            <summary>
+            Contents of the response.
+            </summary>
+        </member>
+        <member name="T:Defensio.Api.Rest.RestClient">
+            <summary>
+            A rest client.
+            </summary>
+        </member>
+        <member name="M:Defensio.Api.Rest.RestClient.Get(System.String,System.String)">
+            <summary>
+            Makes a GET request.
+            </summary>
+            <param name="path">Path for the request.</param>
+            <param name="queryString">Query string for the request.</param>
+            <returns>A rest response.</returns>
+        </member>
+        <member name="M:Defensio.Api.Rest.RestClient.Put(System.String,System.String)">
+            <summary>
+            Makes a PUT request.
+            </summary>
+            <param name="path">Path for the request.</param>
+            <param name="putData">Data for the request.</param>
+            <returns>A rest response.</returns>
+        </member>
+        <member name="M:Defensio.Api.Rest.RestClient.Post(System.String,System.String)">
+            <summary>
+            Makes a POST request.
+            </summary>
+            <param name="path">Path for the request.</param>
+            <param name="postData">Data for the request.</param>
+            <returns>A rest response.</returns>
+        </member>
+        <member name="P:Defensio.Api.Rest.RestClient.KeepAlive">
+            <summary>
+            Keep alive setting.
+            </summary>
+        </member>
+        <member name="P:Defensio.Api.Rest.RestClient.UserAgent">
+            <summary>
+            The user agent to use.
+            </summary>
+        </member>
+        <member name="T:Defensio.Api.DefensioClient">
+            <summary>
+            Official .NET library for Defensio API 2.0, written in C#
+            </summary>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of a new Defensio API client
+            </summary>
+            <param name="apiKey">Your API key to access the Defensio service</param>
+            <param name="client">The name of your application, in the format specified in our API documentation that can be found at http://defensio.com/api </param>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.GetUser">
+            <summary>
+            Get information about the API key.
+            </summary>
+            <returns>API key information.</returns>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.PostDocument(System.Collections.Hashtable)">
+            <summary>
+            Create and analyze a new document
+            </summary>
+            <param name="input">Input parameters to the request.</param>
+            <returns>The result of the processing.</returns>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.GetDocument(System.String)">
+            <summary>
+            Gets the status of an existing document.
+            </summary>
+            <param name="signature">The signature of the document to retrieve.</param>
+            <returns>The result of the request.</returns>
+            <remarks>
+            Use this option within 30 days of posting a document.
+            </remarks>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.PutDocument(System.String,System.Collections.Hashtable)">
+            <summary>
+            Submits classification errors (false positives or false negatives).
+            </summary>
+            <param name="signature">The signature of the document to modify.</param>
+            <param name="input">...........</param>
+            <returns>The result of the request.</returns>
+            <remarks>
+            Use this option within 30 days of posting a document.
+            </remarks>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.GetBasicStats">
+            <summary>
+            Gets basic statistics for the current user.
+            </summary>
+            <returns>Basic statistics information.</returns>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.GetExtendedStats(System.Collections.Hashtable)">
+            <summary>
+            Gets extended statistics for the current user.
+            </summary>
+            <param name="input">Request object for extended statistics.</param>
+            <returns>The result of the request.</returns>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.PostProfanityFilter(System.Collections.Hashtable)">
+            <summary>
+            Filter a set of values based on a pre-defined dictionary.
+            </summary>
+            <param name="input">The values to filtered.</param>
+            <returns>The result of the filtering.</returns>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.HandlePostDocumentAsyncCallback(System.String)">
+            <summary>
+            Parses the posted document analysis of an async request.
+            </summary>
+            <param name="content">The raw content posted.</param>
+            <returns>The parsed result.</returns>
+        </member>
+        <member name="M:Defensio.Api.DefensioClient.HandlePostDocumentAsyncCallback(System.Web.HttpRequest)">
+            <summary>
+            Parses the posted document analysis of an async request.
+            </summary>
+            <param name="request">ASP.NET request object.</param>
+            <returns>The parsed result.</returns>
+        </member>
+    </members>
+</doc>

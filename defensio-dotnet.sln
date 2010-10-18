@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defensio.Api", "Defensio.Api\Defensio.Api.csproj", "{4FAAD325-B978-4019-8E93-594E35C2174D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defensio.Tests", "Defensio.Tests\Defensio.Tests.csproj", "{75A39508-CA7B-4080-AF74-A41F51142AA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FAAD325-B978-4019-8E93-594E35C2174D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4FAAD325-B978-4019-8E93-594E35C2174D}.Debug|x86.Build.0 = Debug|Any CPU
+		{4FAAD325-B978-4019-8E93-594E35C2174D}.Release|x86.ActiveCfg = Release|Any CPU
+		{4FAAD325-B978-4019-8E93-594E35C2174D}.Release|x86.Build.0 = Release|Any CPU
+		{75A39508-CA7B-4080-AF74-A41F51142AA0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{75A39508-CA7B-4080-AF74-A41F51142AA0}.Debug|x86.Build.0 = Debug|Any CPU
+		{75A39508-CA7B-4080-AF74-A41F51142AA0}.Release|x86.ActiveCfg = Release|Any CPU
+		{75A39508-CA7B-4080-AF74-A41F51142AA0}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Defensio.Api\Defensio.Api.csproj
+	EndGlobalSection
+EndGlobal
